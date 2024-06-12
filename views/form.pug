@@ -1,0 +1,9 @@
+h1= "Add Message"
+form(method="POST", action="/new") 
+    div
+        label(for="author")= "Author"
+        input#author(type="text", name="author")
+    div
+        label(for="text")= "Text"
+        input#text(type="text", name="text")
+    input(type="submit", value="send!")

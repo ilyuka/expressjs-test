@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  a(href="/new")= "write post!" 
+  ul 
+    each msg in messages
+      li= msg.name + ": '" + msg.text + "' (" + msg.added + ");"
+  
